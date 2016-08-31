@@ -28,3 +28,11 @@ After EasyVPNServer is launched, you can then launch EasyVPNClient from a intran
       java EasyVPNClient easyvpn.tomwang.com 8888 192.168.1.88 22
 
 And then you can use your ssh client from anywhere to ssh to 192.168.1.88 by connecting to port 8889 or your EasyVPNServer. 
+
+## About Security
+EasyVPNServer acts simply as a switch or connector between 2 networks which can not reach each others directly, it doesn't really take part in the authentication and authorization between your intranet services and network clients. so you can improve security at different levels:
+ 
+(1) Keep secret the IP address of your EasyVPNServer.  
+(2) Make your intranet password(s) strong enough, if possible, use private key for authentication.
+(3) Configure firewall for EasyVPNServer to only allow requests from your machine(s) or network segment(s).
+ 
